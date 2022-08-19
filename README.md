@@ -9,9 +9,13 @@ And then setting the name of the profile on the variables.tf file (line 15)
 
 
 Once done, simply run:
+
     terraform init
+
     terraform apply         #carefully review plan 
+    
     *test*
+
     terraform destroy       #carefully review plan
 
 *test*
