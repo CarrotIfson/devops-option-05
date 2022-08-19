@@ -18,7 +18,9 @@ Once done, simply run:
 *test*
 In order to test the deployment, we can run the python test.py file which will:
 1) Export the newly generated SSH Key into a file and grant it permissions
-2) Print the cmds for: ssh connection, getting and putting some items into dynamodb. Which can then run manually at will. 
+
+2) Print the cmds for: 
+    ssh connection, getting and putting some items into dynamodb. Which can then be run manually at will. 
 The template for this calls maybe found at the bottom of this document.
 
 Note that it may take a couple of minutes after the apply is performed for all the changes to be made (such as security groups)
