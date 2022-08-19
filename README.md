@@ -32,6 +32,7 @@ I have decided to apply default_tags (find below) on all resources for easier id
         "${var.customer}:env" = var.env
         }
 
+The code has been tested and supports multiple environments on the same region.
 
 #test template
 #handle new ssh
