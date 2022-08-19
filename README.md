@@ -43,9 +43,7 @@ TEST TEMPLATE
 #handle new ssh
 
     rm -f privKey.pem;
-
     terraform output -raw private_key > privKey.pem;
-
     chmod 400 privKey.pem;
 
 #ssh connection
