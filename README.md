@@ -39,13 +39,19 @@ The code has been tested and supports multiple environments on the same region.
 
 #test template
 #handle new ssh
+
     rm -f privKey.pem;
+
     terraform output -raw private_key > privKey.pem;
+    
     chmod 400 privKey.pem;
 
 #ssh connection
+
     ssh -i "privKey.pem" ec2-user@{output.ec2_dns}
 #put-item
+
     aws dynamodb put-item --table-name {output.dynamodb_table} --item '{"testDevopsHash": {"S":"SomeRandomText"}, "someColumn": {"N":"1234"}}' --region {output.aws_region}
 #get-item
+
     aws dynamodb get-item --table-name {output.dynamodb_table} --key '{"testDevopsHash": {"S": "SomeRandomText"}}' --region '{output.aws_region}
