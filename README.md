@@ -37,13 +37,14 @@ I have decided to apply default_tags (find below) on all resources for easier id
 
 The code has been tested and supports multiple environments on the same region.
 
-#test template
+TEST TEMPLATE
+
 #handle new ssh
 
     rm -f privKey.pem;
 
     terraform output -raw private_key > privKey.pem;
-    
+
     chmod 400 privKey.pem;
 
 #ssh connection
