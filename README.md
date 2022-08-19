@@ -24,7 +24,6 @@ Note that it may take a couple of minutes after the apply is performed for all t
 
 
 No modules were used on the development of the project as the resources were easily handled without them.
-
 Most of the resources have been put into specific .tf files for easier maintenance.
 
 In order to support multiple stages and dynamic names, there are two variables, var.prefix and local.stack (var.env+var.region), that are prepended and appended to all resources names. 
